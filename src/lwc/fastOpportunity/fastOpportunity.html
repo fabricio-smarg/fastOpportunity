@@ -1,0 +1,58 @@
+<template>
+    <header class="slds-page-header__col-title custom-header">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-standard-opportunity">
+                    <lightning-icon icon-name='standard:opportunity' size='small' title='opportunity'></lightning-icon>
+                </span>
+            </div>
+            <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                    <div class="slds-page-header__name-title">
+                        <h1> <span class="slds-page-header__title slds-truncate"> Fast Opportunity </span> </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="custom-container">
+
+        <c-loading-screen lwc:if={showLoadingScreen} show-dots="true" message={loadingScreenMessage}></c-loading-screen> 
+        
+        <div lwc:if={showForms}>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-4">
+                    <lightning-input type="text" name="customerFirstName" label="Customer first name" onchange={handleChange}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_2-of-4">
+                    <lightning-input type="text" name="customerLastName" label="Customer last name" required="true" onchange={handleChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-4">
+                    <lightning-input type="text" name="company" label="Company" required="true" onchange={handleChange}></lightning-input>
+                </div>
+            </div>
+        </div>
+
+        <div lwc:if={showResult}>
+            <div class="slds-text-align_center">
+                <p class="slds-text-body_regular slds-m-bottom_x-small">
+                    Your new opportunity has been created <em style="color: rgb(0, 255, 0);">successfully</em>.
+                </p>
+                <a href={recordUrl} target="_blank" style="color: #009EDB">Redirect here.</a>
+            </div>
+        </div>
+
+        <footer class="slds-text-align_right">
+            <div lwc:if={showCreate}>
+                <lightning-button variant="brand" label="Create" onclick={handleCreate} disabled={isDisabled}></lightning-button>
+            </div>
+            <div lwc:if={showFinish}>
+                <lightning-button variant="brand" label="Finish" onclick={handleFinish}></lightning-button>
+            </div> 
+        </footer>
+
+    </div>
+</template>

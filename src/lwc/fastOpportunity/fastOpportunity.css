@@ -1,0 +1,14 @@
+.custom-container {
+    border: 1px solid #e0e0e0;
+    border: 0.5rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba( 0,0,0,0.1 );
+}
+
+.custom-header {
+    background-color: #e8e8e8;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0.5rem 0.5rem 0 0;
+}

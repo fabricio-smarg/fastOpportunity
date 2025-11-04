@@ -73,4 +73,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ### ©️ Autor
 
 [![GitHub](https://img.shields.io/github/followers/fabricio-smarg?label=Fabricio%20Alves%20Smargiasse&style=social)](https://github.com/fabricio-smarg)
-[![LinkedIn](https://img.shields.io/badge/Acesse%20meu%20LinkedIn-blue?style=flat&logo=linkedin&logoColor=white&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffabricio-alves-smargiasse%2F)](https://www.linkedin.com/in/fabricio-alves-smargiasse/)
+[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on%20LinkedIn-blue?style=flat&logo=linkedin&logoColor=white&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffabricio-alves-smargiasse%2F)](https://www.linkedin.com/in/fabricio-alves-smargiasse/)

@@ -61,7 +61,7 @@ Once deployed and configured, a user can:
 * **Apex Controller (`FastOpportunityController.cls`):** Contains the core business logic, including the DML operations to insert the new Account, Contact, and Opportunity records.
 * **Repository(`LeadRepository.cls`):** Contains the SOQL to retrieve Lead data.
 
-### 🖼️ Component preview
+### 🖼️ Component Preview
 ![Local image](./images/fastOpportunity.jpeg)
 
 ### 📜 License
